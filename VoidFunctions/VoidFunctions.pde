@@ -26,8 +26,8 @@ void drawCircle(int r, int g, int b){ //create ints to be defined whenever the f
 }
 
 void crosshairs(int x, int y){
-  strokeWeight(5);
-  stroke(255);
-  line(x,0,x,height);
-  line(0,y,width,y);
+  strokeWeight(5); //set width of lines
+  stroke(255); //set color of lines
+  line(x,0,x,height); //draw vertical line down center of canvas
+  line(0,y,width,y); //draw horizontal line across center of canvas
 }
