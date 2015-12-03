@@ -7,7 +7,8 @@ void setup(){
 void draw(){
   background(0); //set background color
   drawSquare(); //draw a square based on the drawSquare function
-  drawCircle(20,150,50); //draw an ellipse based on the drawCircle function with a color defined by the given nymbers
+  crosshairs(width/2,height/2); //draw a set of crosshairs centered on a point given by the given numbers
+  drawCircle(20,150,50); //draw an ellipse based on the drawCircle function with a color defined by the given numbers
 }
 
 void drawSquare(){
@@ -22,4 +23,11 @@ void drawCircle(int r, int g, int b){ //create ints to be defined whenever the f
   fill(r,g,b); //set fill to be defined when function is called
   stroke(r,g,b); //set fill to be defined when function is called
   ellipse(mouseX,mouseY,30,30); //draw an ellipse centered on the mouse
+}
+
+void crosshairs(int x, int y){
+  strokeWeight(5);
+  stroke(255);
+  line(x,0,x,height);
+  line(0,y,width,y);
 }
