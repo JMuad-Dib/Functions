@@ -1,7 +1,7 @@
 
 
 void setup(){
-  size(800,600); //set random size
+  size(800,600); //set size
 }
 
 void draw(){
